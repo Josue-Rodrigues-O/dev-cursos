@@ -1,0 +1,63 @@
+div {
+    display: flex;
+}
+
+label {
+    margin: 1vh;
+    margin-bottom: 2vh;
+}
+
+hr {
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+a:hover{
+    
+}
+
+.container {
+    height: 100vh;
+    background-image: url("https://img.freepik.com/vetores-gratis/estudando-a-ilustracao-do-conceito_114360-1301.jpg?w=740&t=st=1706209409~exp=1706210009~hmac=cc056a5c60412d49da9947c7f8d1fe1b81e931938edf7b12ccf6e9038cc4b4ce");
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: flex-end;
+}
+
+.container-login {
+    width: 50%;
+    height: 100%;
+    flex-direction: column;
+    background-color: #F7F7F7;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-email,
+.container-senha,
+.container-button {
+    flex-direction: column;
+    margin: 0;
+    margin-bottom: 4vh;
+    width: 70%;
+}
+
+.container-email {}
+
+.container-senha {}
+
+.container-button {}
+
+#esqueci-minha-senha {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 1vh;
+}
+
+#erro-senha,
+#erro-email {}

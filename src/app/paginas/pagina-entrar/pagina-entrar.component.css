@@ -7,19 +7,17 @@ label {
     margin-bottom: 2vh;
 }
 
-hr {
-    width: 100%;
-}
-
-a{
+a {
     text-decoration: none;
     font-weight: 500;
     color: black;
 }
 
-a:hover{
-    
+button {
+    width: 100%;
 }
+
+a:hover {}
 
 .container {
     height: 100vh;
@@ -51,7 +49,11 @@ a:hover{
 
 .container-senha {}
 
-.container-button {}
+.container-button {
+    align-items: center;
+    justify-content: space-evenly;
+    height: 20%;
+}
 
 #esqueci-minha-senha {
     display: flex;

@@ -1,0 +1,21 @@
+app-barra-superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+header {
+    padding: 10vh;
+    padding-top: 20vh;
+    padding-bottom: 0;
+}
+
+.container {
+    height: 90vh;
+}
+
+.controles-minhas-compras {
+    min-height: 53.2vh;
+    padding: 10vh;
+}

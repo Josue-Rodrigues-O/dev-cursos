@@ -4,21 +4,20 @@
             <label>Email</label>
             <input type="text" placeholder="Digite seu email">
             @if (mostrarErroEmail){
-                <label id="erro-email">Email é obrigatório</label>
+            <label id="erro-email">Email é obrigatório</label>
             }
         </div>
         <div class="container-senha">
             <label>Senha</label>
             <input type="text" placeholder="Digite sua senha">
             @if (mostrarErroSenha) {
-                <label id="erro-senha">Senha é obrigatória</label>
+            <label id="erro-senha">Senha é obrigatória</label>
             }
             <a href="#" id="esqueci-minha-senha">Esqueci minha senha</a>
         </div>
         <div class="container-button">
-            <button>Entrar</button>
-            <hr>
-            <label>não possui uma conta? <a href="#">Cadastre-se aqui!</a></label>
+            <button (click)="aoClicarEntrar()">Entrar</button>
+            <label>Ainda não possui uma conta? <a href="/cadastrar">Cadastre-se aqui!</a></label>
         </div>
     </div>
 </div>

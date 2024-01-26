@@ -1,4 +1,128 @@
+.imgLogo {
+    border-radius: 2vh;
+    margin-right: 5px;
+    height: 50px;
+    width: 50px;
+}
+
+.linksDoHeader {
+    height: 100%;
+    /* width: 420px; */
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    margin-left: 30px;
+}
+
+.div-link {
+    padding: 0 10px 0 10px;
+    height: 100%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 400ms ease;
+}
+
+.div-link:hover {
+    cursor: pointer;
+    border-bottom: solid 3px #007DFE;
+    background-color: #64aef72d;
+}
+
+.barra-pesquisa {
+    width: 40%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+    align-items: center;
+}
+
+.input-pesquisa{
+    width: 85%;
+    height: 6vh;
+    border: solid 1px #000000a6;
+    border-right: none;
+    border-radius: 2vh 0px 0px 2vh;
+    transition: backgorund-color 400ms ease;
+}
+
+.input-pesquisa:focus ~ #search {
+    background-color: #64aef72d;
+}
+
+.input-pesquisa:focus{
+    background-color: #64aef72d;
+}
+
+#search {
+    width: 15%;
+    border: solid 1px #000000a6;
+    border-radius: 0px 2vh 2vh 0px;
+    height: 6vh;
+    border-left: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #0000005d;
+}
+
+#search:hover {
+    cursor: pointer;
+}
+
+#icone-usuario {
+    width: 8vh;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: auto 0;
+    border-radius: 50%;
+    background-color: #4098fd;
+    color: white;
+    font-weight: bold;
+    transition: background-color 700ms ease;
+}
+
+#icone-usuario:hover {
+    cursor: pointer;
+    background-color: #297ae4;
+}
+
+a {
+    /* margin-left: 2vw; */
+    text-decoration: none;
+    color: black;
+}
+
 .container {
     height: 10vh;
-    background-color: #3E71F1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid #E1E1E1;
+}
+
+.nav-bar {
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: flex;
+    height: 99%;
+    align-items: center;
+    align-items: stretch;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 5vh;
+    font-weight: bold;
+}
+
+.nav-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
 }

@@ -3,6 +3,7 @@ app-barra-superior {
     top: 0;
     left: 0;
     right: 0;
+    z-index: 5;
 }
 
 header {
@@ -18,4 +19,8 @@ header {
 .controles-minhas-compras {
     min-height: 53.2vh;
     padding: 10vh;
+    padding-top: 5vh;
+    display: grid;
+    grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
+    justify-items: center;
 }

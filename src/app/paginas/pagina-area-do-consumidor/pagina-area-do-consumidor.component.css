@@ -47,7 +47,7 @@ p {
     padding: 10vh;
     padding-top: 5vh;
     display: grid;
-    grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
+    grid-template-columns: 25% 25% 25% 25%;
     justify-items: center;
 }
 

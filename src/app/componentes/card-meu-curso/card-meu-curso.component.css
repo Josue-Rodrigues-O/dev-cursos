@@ -1,5 +1,5 @@
 .container {
-    width: 225px;
+    width: 250px;
     height: 300px;
     border-radius: 1vh;
     overflow: hidden;
@@ -7,7 +7,7 @@
     flex-direction: column;
     justify-content: flex-end;
     background-color: #E1E1E1;
-    margin-bottom: 3vh;
+    margin-bottom: 10vh;
 }
 
 .container:hover {

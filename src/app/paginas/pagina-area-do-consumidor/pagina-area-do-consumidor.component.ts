@@ -14,6 +14,8 @@ import { Router } from '@angular/router';
 export class PaginaAreaDoConsumidorComponent {
     constructor(private route: Router){}
 
+    listaCard: number[] = [1,2]
+
     aoClicarNoCard(){
         this.route.navigate(["curso"])
     }

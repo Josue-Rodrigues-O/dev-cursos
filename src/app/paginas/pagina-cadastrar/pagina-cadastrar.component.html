@@ -1,1 +1,30 @@
-<p>pagina-cadastrar works!</p>
+<div class="container">
+    <div class="container-login">
+        <div class="container-email">
+            <label>Digite seu Email</label>
+            <input type="text" placeholder="Email">
+            <!-- @if (mostrarErroEmail){
+            <label id="erro-email">Email é obrigatório</label>
+            } -->
+        </div>
+        <div class="container-senha">
+            <label>Digite uma senha</label>
+            <input type="text" placeholder="Senha">
+            <!-- @if (mostrarErroSenha) {
+            <label id="erro-senha">Senha é obrigatória</label>
+            } -->
+        </div>
+        <div class="container-senha">
+            <label>Digite sua senha novamente</label>
+            <input type="text" placeholder="Confirmar senha">
+            <!-- @if (mostrarErroSenha) {
+                <label id="erro-senha">Senha é obrigatória</label>
+            } -->
+        </div>
+        <div class="container-button">
+            <button (click)="aoClicarEntrar()">Cadastrar</button>
+            <label>Já possui uma conta? <a href="">Acesse por aqui!</a></label>
+        </div>
+    </div>
+    <div class="imagem"></div>
+</div>

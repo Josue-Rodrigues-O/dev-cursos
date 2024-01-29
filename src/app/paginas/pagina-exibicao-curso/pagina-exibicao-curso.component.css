@@ -1,0 +1,86 @@
+app-barra-superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 5;
+}
+
+iframe {
+    border-radius: 2vh;
+    width: 90%;
+    height: 78%;
+    margin: 10vh;
+    margin-top: 5vh;
+    margin-bottom: 1vh;
+}
+
+p {
+    margin-left: 2vh;
+}
+
+progress{
+    margin-right: 2vh;
+    width: 7vw;
+}
+
+.container {
+    height: 90vh;
+    display: flex;
+    padding-top: 10vh;
+}
+
+.container-video {
+    height: 100%;
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: flex-start
+}
+
+.container-lista-videos {
+    height: 100%;
+    width: 30%;
+    position: fixed;
+    top: 10vh;
+    right: 0;
+    bottom: 0;
+    overflow: auto;
+}
+
+.cabecalho-lista {
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E1E1E1;
+    padding-left: 3vh;
+    font-weight: bold;
+    font-size: 3vh;
+    justify-content: space-between;
+}
+
+.item-lista {
+    min-height: 8vh;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid #E1E1E1;
+    padding-left: 3vh;
+    padding-right: 2vh;
+}
+
+
+.check-box:hover {
+    cursor: pointer;
+    color: #3D94FA;
+}
+
+.avaliacao {
+    margin-left: 10vh;
+    margin-right: 10vh;
+    display: flex;
+}
+
+.barra-progresso{
+    margin-right: 3vh;
+}

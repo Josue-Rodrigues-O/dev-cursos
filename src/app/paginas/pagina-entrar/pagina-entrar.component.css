@@ -21,7 +21,9 @@ input:focus {
     box-shadow: 0px 0px 0.5rem #C1D9FF;
 }
 
-a:hover {}
+a:hover {
+    color: #0062CF;
+}
 
 .container {
     height: 100vh;

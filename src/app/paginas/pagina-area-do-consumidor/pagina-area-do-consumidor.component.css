@@ -24,3 +24,9 @@ header {
     grid-template-columns: 18vw 18vw 18vw 18vw 18vw;
     justify-items: center;
 }
+
+.banner {
+    background-color: #E1E1E1;
+    height: 30vh;
+    margin: 10vh;
+}

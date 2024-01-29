@@ -5,16 +5,12 @@
         <hr>
     </header>
     <div class="controles-minhas-compras">
-        <app-card-meu-curso (click)="aoClicarNoCard()"></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
+        @for (item of listaCard; track $index) {
+            <app-card-meu-curso (click)="aoClicarNoCard()"></app-card-meu-curso>
+        }
+    </div>
+    <div class="banner">
+        
     </div>
     <app-rodape></app-rodape>
 </div>

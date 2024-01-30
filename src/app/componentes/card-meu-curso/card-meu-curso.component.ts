@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-card-meu-curso',
@@ -9,6 +9,16 @@ import { Component } from '@angular/core';
 })
 export class CardMeuCursoComponent {
   mouseEnter = false
+  @Input() mostrarValor!: boolean;
+  classeTitulo = ""
+
+  constructor(){
+    if (this.mostrarValor) {
+      this.classeTitulo = "titulo-com-valor"
+    }else{
+      this.classeTitulo = "titulo-sem-valor"
+    }
+  }
 
   aoPassarMouse() {
     this.mouseEnter = !this.mouseEnter

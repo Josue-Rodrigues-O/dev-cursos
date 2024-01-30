@@ -3,14 +3,14 @@
         <div class="logo">
             <img class="imgLogo" src="../../../assets/app-logo.png" alt="">
             <div class="linksDoHeader">
-                <div class="div-link">
+                <div class="div-link" (click)="navegarPara('/area-do-consumidor')">
                     <a href="/area-do-consumidor">Meus Cursos</a>
                 </div>
-                <div class="div-link">
+                <div class="div-link" (click)="navegarPara('/mercado')">
                     <a href="/mercado">Todos os Cursos</a>
                 </div>
-                <div class="div-link">
-                    <a href="">Faça uma doação</a>
+                <div class="div-link" (click)="navegarPara('/pagina-doacao')">
+                    <a href="/pagina-doacao">Faça uma doação</a>
                 </div>
             </div>
         </div>

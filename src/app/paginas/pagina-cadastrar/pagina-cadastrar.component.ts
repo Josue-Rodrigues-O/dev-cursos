@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-pagina-cadastrar',
@@ -8,9 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './pagina-cadastrar.component.css'
 })
 export class PaginaCadastrarComponent {
-
+  constructor(private route: Router){}
 
   aoClicarEntrar() {
-
+    this.route.navigate(['/area-do-consumidor'])
   }
 }

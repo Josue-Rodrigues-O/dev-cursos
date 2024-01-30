@@ -6,7 +6,7 @@
     </header>
     <div class="controles-minhas-compras">
         @for (item of listaCard; track $index) {
-        <app-card-meu-curso (click)="aoClicarNoCard()"></app-card-meu-curso>
+        <app-card-meu-curso (click)="aoClicarNoCard()" [mostrarValor]="false"></app-card-meu-curso>
         }
     </div>
     <div class="banner" (click)="aoClicarNoBanner()">

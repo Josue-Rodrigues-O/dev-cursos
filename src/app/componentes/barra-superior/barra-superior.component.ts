@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-barra-superior',
@@ -8,5 +9,9 @@ import { Component } from '@angular/core';
   styleUrl: './barra-superior.component.css'
 })
 export class BarraSuperiorComponent {
+  constructor(private route: Router) { }
 
+  navegarPara(link: any) {
+    this.route.navigate([link])
+  }
 }

@@ -5,6 +5,7 @@ import { PaginaAreaDoConsumidorComponent } from './paginas/pagina-area-do-consum
 import { PaginaMercadoComponent } from './paginas/pagina-mercado/pagina-mercado.component';
 import { PaginaAquisicaoCursoComponent } from './paginas/pagina-aquisicao-curso/pagina-aquisicao-curso.component';
 import { PaginaExibicaoCursoComponent } from './paginas/pagina-exibicao-curso/pagina-exibicao-curso.component';
+import { PaginaDoacaoComponent } from './paginas/pagina-doacao/pagina-doacao.component';
 
 export const routes: Routes = [
     {path: '', component: PaginaEntrarComponent},
@@ -12,5 +13,6 @@ export const routes: Routes = [
     {path: 'area-do-consumidor', component: PaginaAreaDoConsumidorComponent},
     {path: 'mercado', component: PaginaMercadoComponent},
     {path: 'detalhes-do-curso', component: PaginaAquisicaoCursoComponent},
-    {path: 'curso', component: PaginaExibicaoCursoComponent}
+    {path: 'curso', component: PaginaExibicaoCursoComponent},
+    {path: 'pagina-doacao', component: PaginaDoacaoComponent}
 ];

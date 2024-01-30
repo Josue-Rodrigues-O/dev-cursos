@@ -8,12 +8,25 @@ app-barra-superior {
 
 header {
     padding: 10vh;
-    padding-top: 20vh;
     padding-bottom: 0;
 }
 
 h1 {
     margin-bottom: 2vh;
+}
+
+h2{
+    margin-top: 5vh;
+    margin-left: 5vh;
+    font-family: 'Alfa Slab One', serif;
+    font-size: 38px;
+    text-align: left;
+}
+
+img {
+    height: 90%;
+    border-radius: 50%;
+    margin-right: 20%;
 }
 
 .container {
@@ -27,4 +40,30 @@ h1 {
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     justify-items: center;
+}
+
+.banner{
+    background: linear-gradient(to left, #0157BC, #007DFE);
+    border-radius: 2vh;
+    height: 50vh;
+    margin: 10vh;
+    margin-top: 20vh;
+    margin-bottom: 0;
+    display: flex;
+}
+
+.texto{
+    width: 80%;
+    color: white;
+    display: flex;
+    align-items: start;
+}
+
+.imagem{
+    overflow: hidden;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
 }

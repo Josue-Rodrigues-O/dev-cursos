@@ -1,20 +1,29 @@
 <div class="container">
     <app-barra-superior></app-barra-superior>
+    <div class="banner">
+        <div class="texto">
+            <h2>Descubra o poder da programação! Adquira seus cursos online agora e transforme sua carreira!</h2>
+        </div>
+        <div class="imagem">
+            <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-sistema-operacional_114360-2195.jpg?w=740&t=st=1706610015~exp=1706610615~hmac=20e0d1496493e04e74a1df4023b2a7fb265bfcf762d8338e9b8425078fe3beae"
+                alt="">
+        </div>
+    </div>
     <header>
         <h1>Cursos disponiveis</h1>
         <hr>
     </header>
     <div class="controles-minhas-compras">
-        <app-card-meu-curso (click)="aoClicarNoCard()"></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
-        <app-card-meu-curso></app-card-meu-curso>
+        <app-card-meu-curso [mostrarValor]="true" (click)="aoClicarNoCard()"></app-card-meu-curso>
+        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
+        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
+        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
+        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
+        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
+        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
+        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
+        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
+        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
     </div>
     <app-rodape></app-rodape>
 </div>

@@ -16,6 +16,7 @@ h1 {
     margin-bottom: 2vh;
 }
 
+
 span {
     font-size: 9vh;
     display: block;
@@ -46,6 +47,7 @@ p {
     min-height: 53.2vh;
     padding: 10vh;
     padding-top: 5vh;
+    padding-bottom: 0;
     display: grid;
     grid-template-columns: 25% 25% 25% 25%;
     justify-items: center;

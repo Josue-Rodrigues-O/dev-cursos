@@ -1,6 +1,85 @@
-.banner-principal{
+section{
+    display: flex;
+}
+
+p, strong{
+    font-size: 24px;
+    color: black;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.titulo{
+    color: white;
+    position: absolute;
+    left: 15vh;
+    top: 20vh;
+    font-size: 50px;
+}
+
+.card-flutuante{
+    border-radius: 1vh;
+    background-color: hsl(212, 90%, 62%, 85%);
+    color: white;
+    width: 30vw;
     height: 60vh;
+    position: absolute;
+    left: 15vh;
+    top: 55vh;
+    padding: 5vh;
+    font-size: 30px;
+}
+
+.card-2{
+    background-color: rgba(255, 255, 255, 0.781);
+    border-radius: 1vh;
+    color: black;
+    width: 70%;
+    height: 50vh;
+    padding: 5vh;
+    font-size: 30px;
+}
+
+.section-textos{
+    width: 50%;
+    
+    margin-right: 10vh;
+    height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.section-textos h1{
+    color: #464B52;
+    font-size: 50px;
+    margin-left: 15vh;
+}
+
+.imagem-1{
+    background-image: url("https://img.freepik.com/fotos-gratis/perto-das-maos-do-homem-afro-americano-digitando-no-teclado-do-computador-na-sala-de-estar-usando-a-comunicacao-on-line-da-web-de-internet-do-escritorio-em-casa-trabalhador-remoto-trabalhando-em-casa_482257-30170.jpg?w=826&t=st=1705943742~exp=1705944342~hmac=7ebb9e476ef7e9335d2a3e0b0b4a3167566102a9e34f630ebf98b149bfc22543");
+}
+
+.imagem-2 {
     background-image: url("https://img.freepik.com/fotos-gratis/uma-pessoa-digitando-no-laptop-no-escritorio-gerado-pela-ia_188544-39272.jpg?w=740&t=st=1705694682~exp=1705695282~hmac=127c10238bdf3bf05270ed4837c4c731f3ec8fe15fd99ac4dd06fb6ae2d59750");
+}
+
+.parallax {
+    /* The image used */
+    /* background-image: url("https://img.freepik.com/fotos-gratis/perto-das-maos-do-homem-afro-americano-digitando-no-teclado-do-computador-na-sala-de-estar-usando-a-comunicacao-on-line-da-web-de-internet-do-escritorio-em-casa-trabalhador-remoto-trabalhando-em-casa_482257-30170.jpg?w=826&t=st=1705943742~exp=1705944342~hmac=7ebb9e476ef7e9335d2a3e0b0b4a3167566102a9e34f630ebf98b149bfc22543");
+   */
+    /* Set a specific height */
+    min-height: 100vh;
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-}
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

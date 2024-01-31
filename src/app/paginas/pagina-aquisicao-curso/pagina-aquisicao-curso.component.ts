@@ -10,5 +10,11 @@ import { RodapeComponent } from "../../componentes/rodape/rodape.component";
     imports: [BarraSuperiorComponent, RodapeComponent]
 })
 export class PaginaAquisicaoCursoComponent {
-
+    aba1 = true;
+    aoClicarAba1(){
+        this.aba1 = true
+    }
+    aoClicarAba2(){
+        this.aba1 = false
+    }
 }

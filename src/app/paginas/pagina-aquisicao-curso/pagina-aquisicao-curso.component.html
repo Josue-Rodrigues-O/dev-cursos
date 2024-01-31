@@ -8,62 +8,65 @@
             allowfullscreen></iframe>
         <div class="descricao-curso">
             <div class="abas">
-                <div class="div-aba">Conteúdo</div>
+                <div class="div-aba" (click)="aoClicarAba1()">Conteúdo</div>
                 <div class="div-aba">Detalhes do curso</div>
             </div>
-            <div class="conteudo-curso">
-                <div class="video">
-                    <span>
-                        01 Titulo do video
-                    </span>
-                    <span class="material-symbols-outlined lock-open">
-                        lock_open
-                    </span>
+            @if (aba1) {
+                <div class="conteudo-curso">
+                    <div class="video">
+                        <span>
+                            01 Titulo do video
+                        </span>
+                        <span class="material-symbols-outlined lock-open">
+                            lock_open
+                        </span>
+                    </div>
+                    <div class="video">
+                        <span>
+                            02 Titulo do video
+                        </span>
+                        <span class="material-symbols-outlined">
+                            lock
+                        </span>
+                    </div>
+                    <div class="video">
+                        <span>
+                            03 Titulo do video
+                        </span>
+                        <span class="material-symbols-outlined">
+                            lock
+                        </span>
+                    </div>
+                    <div class="video">
+                        <span>
+                            04 Titulo do video
+                        </span>
+                        <span class="material-symbols-outlined">
+                            lock
+                        </span>
+                    </div>
+                    <div class="video">
+                        <span>
+                            05 Titulo do video
+                        </span>
+                        <span class="material-symbols-outlined">
+                            lock
+                        </span>
+                    </div>
+                    <div class="video">
+                        <span>
+                            06 Titulo do video
+                        </span>
+                        <span class="material-symbols-outlined">
+                            lock
+                        </span>
+                    </div>
                 </div>
-                <div class="video">
-                    <span>
-                        02 Titulo do video
-                    </span>
-                    <span class="material-symbols-outlined">
-                        lock
-                    </span>
+            }@else {
+                <div class="detalhes-curso">
+    
                 </div>
-                <div class="video">
-                    <span>
-                        03 Titulo do video
-                    </span>
-                    <span class="material-symbols-outlined">
-                        lock
-                    </span>
-                </div>
-                <div class="video">
-                    <span>
-                        04 Titulo do video
-                    </span>
-                    <span class="material-symbols-outlined">
-                        lock
-                    </span>
-                </div>
-                <div class="video">
-                    <span>
-                        05 Titulo do video
-                    </span>
-                    <span class="material-symbols-outlined">
-                        lock
-                    </span>
-                </div>
-                <div class="video">
-                    <span>
-                        06 Titulo do video
-                    </span>
-                    <span class="material-symbols-outlined">
-                        lock
-                    </span>
-                </div>
-            </div>
-            <div class="detalhes-curso">
-
-            </div>
+            }
         </div>
     </div>
     <div class="comprar">

@@ -1,8 +1,8 @@
 <div class="container">
     <app-barra-superior></app-barra-superior>
     <div class="conteudo">
-        <h1>Titulo do curso</h1>
-        <iframe src="https://www.youtube.com/embed/bCFTv8a59PE?si=YQqlx_1Zzmr1DaYJ" title="YouTube video player"
+        <h1>{{objetoRecebido?.titulo}}</h1>
+        <iframe src={{link}} title="YouTube video player"
             frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
@@ -12,70 +12,33 @@
                 <div [className]="classeAba2" (click)="aoClicarAba2()">Detalhes do curso</div>
             </div>
             @if (aba1) {
-                <div class="conteudo-curso">
-                    <div class="video">
-                        <span>
-                            01 Titulo do video
-                        </span>
-                        <span class="material-symbols-outlined lock-open">
-                            lock_open
-                        </span>
-                    </div>
-                    <div class="video">
-                        <span>
-                            02 Titulo do video
-                        </span>
-                        <span class="material-symbols-outlined">
-                            lock
-                        </span>
-                    </div>
-                    <div class="video">
-                        <span>
-                            03 Titulo do video
-                        </span>
-                        <span class="material-symbols-outlined">
-                            lock
-                        </span>
-                    </div>
-                    <div class="video">
-                        <span>
-                            04 Titulo do video
-                        </span>
-                        <span class="material-symbols-outlined">
-                            lock
-                        </span>
-                    </div>
-                    <div class="video">
-                        <span>
-                            05 Titulo do video
-                        </span>
-                        <span class="material-symbols-outlined">
-                            lock
-                        </span>
-                    </div>
-                    <div class="video">
-                        <span>
-                            06 Titulo do video
-                        </span>
-                        <span class="material-symbols-outlined">
-                            lock
-                        </span>
-                    </div>
+            <div class="conteudo-curso">
+                @for (item of objetoRecebido?.tabelaVideos; track $index) {
+                <div class="video">
+                    <span>
+                        {{ item.titulo }}
+                    </span>
+                    <span class="material-symbols-outlined">
+                        lock
+                    </span>
                 </div>
+                }
+            </div>
             }@else {
-                <div class="detalhes-curso">
-                    <label for="">Criador do curso</label>
-                    <div class="autor">
-                        <div class="icone-perfil"></div>
-                        <p>Otávio Miranda</p>
-                    </div>
-                    <label for="">Conheça mais sobre <strong>Otávio Miranda</strong> clicando <a href="">aqui.</a></label>
+            <div class="detalhes-curso">
+                <label for="">Criador do curso</label>
+                <div class="autor">
+                    <!-- <div class="icone-perfil"></div> -->
+                    <img id="imagem-icone" src={{objetoRecebido?.linkFotoCanal}} alt="" class="icone-perfil">
+                    <p>{{ objetoRecebido?.autor }}</p>
                 </div>
+                <label for="">Conheça mais sobre <strong>{{ objetoRecebido?.autor }}</strong> clicando <a href={{objetoRecebido?.linkCanal}}>aqui.</a></label>
+            </div>
             }
         </div>
     </div>
     <div class="comprar">
-        <h1>R$ 58,60</h1>
+        <h1>R$ {{ objetoRecebido?.preco }}</h1>
         <p>em até 6x sem juros</p>
         <button>Ir para o carrinho</button>
         <div class="icone-texto">

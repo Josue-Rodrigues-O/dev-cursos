@@ -4,6 +4,7 @@ import { CardMeuCursoComponent } from "../../componentes/card-meu-curso/card-meu
 import { RodapeComponent } from "../../componentes/rodape/rodape.component";
 import { Router } from '@angular/router';
 import { CursosService } from '../../servicos/cursos.service';
+import { Curso } from '../../interfaces/curso';
 
 @Component({
     selector: 'app-pagina-mercado',
@@ -19,7 +20,7 @@ export class PaginaMercadoComponent {
 
     titulo = ""
 
-    aoClicarNoCard() {
-        this.route.navigate(["detalhes-do-curso"])
+    aoClicarNoCard(id: any) {
+        this.route.navigate([`detalhes-do-curso/${id}`])
     }
 }

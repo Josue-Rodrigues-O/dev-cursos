@@ -212,4 +212,8 @@ export class CursosService {
   public getLista() {
     return this.listaDeCursos
   }
+
+  public obterLink(id: any) {
+    return this.listaDeCursos.find(x => x.id == id)?.tabelaVideos[0].linkVideo
+  }
 }

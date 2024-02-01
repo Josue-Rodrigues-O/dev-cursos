@@ -12,7 +12,7 @@ export const routes: Routes = [
     {path: 'cadastrar', component: PaginaCadastrarComponent},
     {path: 'area-do-consumidor', component: PaginaAreaDoConsumidorComponent},
     {path: 'mercado', component: PaginaMercadoComponent},
-    {path: 'detalhes-do-curso', component: PaginaAquisicaoCursoComponent},
+    {path: 'detalhes-do-curso/:id', component: PaginaAquisicaoCursoComponent},
     {path: 'curso', component: PaginaExibicaoCursoComponent},
     {path: 'pagina-doacao', component: PaginaDoacaoComponent}
 ];

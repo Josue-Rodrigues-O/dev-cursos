@@ -15,7 +15,7 @@
     </header>
     <div class="controles-minhas-compras">
         @for (item of listaCursos; track $index) {
-        <app-card-meu-curso [objetoCurso]=item [mostrarValor]="true" (click)="aoClicarNoCard()"></app-card-meu-curso>
+        <app-card-meu-curso [objetoCurso]=item [mostrarValor]="true" (click)="aoClicarNoCard(item.id)"></app-card-meu-curso>
         }
     </div>
     <app-rodape></app-rodape>

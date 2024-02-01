@@ -19,8 +19,6 @@ export class CardMeuCursoComponent {
   classeTitulo = ""
 
   constructor() {
-    console.log(this.objetoCurso)
-    // document.getElementById("banner-card")?.setAttribute("src", "");
     if (this.mostrarValor) {
       this.classeTitulo = "titulo-com-valor"
     } else {

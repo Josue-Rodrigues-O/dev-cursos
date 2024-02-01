@@ -10,11 +10,25 @@ import { RodapeComponent } from "../../componentes/rodape/rodape.component";
     imports: [BarraSuperiorComponent, RodapeComponent]
 })
 export class PaginaAquisicaoCursoComponent {
+    classeAba1 = "div-aba-selecionada";
+    classeAba2 = "div-aba-nao-selecionada";
     aba1 = true;
-    aoClicarAba1(){
+    aoClicarAba1() {
         this.aba1 = true
+        this.verificar()
     }
-    aoClicarAba2(){
+    aoClicarAba2() {
         this.aba1 = false
+        this.verificar()
+    }
+
+    verificar() {
+        if (this.aba1) {
+            this.classeAba1 = "div-aba-selecionada";
+            this.classeAba2 = "div-aba-nao-selecionada"
+        } else {
+            this.classeAba1 = "div-aba-nao-selecionada"
+            this.classeAba2 = "div-aba-selecionada";
+        }
     }
 }

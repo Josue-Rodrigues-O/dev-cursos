@@ -25,6 +25,16 @@ iframe {
     margin-bottom: 5vh;
 }
 
+a {
+    text-decoration: none;
+    font-weight: 500;
+    color: black;
+}
+
+a:hover {
+    color: #0062CF;
+}
+
 .conteudo {
     width: 63%;
     padding: 10vh;
@@ -60,17 +70,25 @@ iframe {
     align-items: center;
 }
 
-.descricao-curso {
-    /* background-color: aquamarine; */
-}
-
 .abas {
     display: flex;
     height: 10vh;
     border-bottom: 1px solid #E1E1E1;
 }
 
-.div-aba {
+.div-aba-selecionada {
+    padding: 0 10px 0 10px;
+    height: 99%;
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background-color 400ms ease;
+    font-weight: bold;
+    border-bottom: solid 3px #007DFE;
+}
+
+.div-aba-nao-selecionada {
     padding: 0 10px 0 10px;
     height: 99%;
     width: 150px;
@@ -81,12 +99,13 @@ iframe {
     font-weight: bold;
 }
 
-.div-aba:hover {
+.div-aba-selecionada:hover,
+.div-aba-nao-selecionada:hover {
     cursor: pointer;
     border-bottom: solid 3px #007DFE;
 }
 
-.video{
+.video {
     display: flex;
     align-items: center;
     flex-wrap: wrap;
@@ -96,6 +115,25 @@ iframe {
     justify-content: space-between;
 }
 
-.lock-open{
+.lock-open {
     color: green;
+}
+
+.detalhes-curso {
+    margin-top: 2vh;
+}
+
+.icone-perfil {
+    background-image: url("https://yt3.ggpht.com/ytc/AIf8zZSZZQG9pyMudyy_wzZi5ecXIR_nS2LlAzKsEZ5IWQ=s48-c-k-c0x00ffffff-no-rj");
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 2vh;
+}
+
+.autor {
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    display: flex;
+    align-items: center;
 }

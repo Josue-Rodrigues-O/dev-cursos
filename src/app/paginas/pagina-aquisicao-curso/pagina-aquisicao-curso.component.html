@@ -8,8 +8,8 @@
             allowfullscreen></iframe>
         <div class="descricao-curso">
             <div class="abas">
-                <div class="div-aba" (click)="aoClicarAba1()">Conteúdo</div>
-                <div class="div-aba">Detalhes do curso</div>
+                <div [className]="classeAba1" (click)="aoClicarAba1()">Conteúdo</div>
+                <div [className]="classeAba2" (click)="aoClicarAba2()">Detalhes do curso</div>
             </div>
             @if (aba1) {
                 <div class="conteudo-curso">
@@ -64,7 +64,12 @@
                 </div>
             }@else {
                 <div class="detalhes-curso">
-    
+                    <label for="">Criador do curso</label>
+                    <div class="autor">
+                        <div class="icone-perfil"></div>
+                        <p>Otávio Miranda</p>
+                    </div>
+                    <label for="">Conheça mais sobre <strong>Otávio Miranda</strong> clicando <a href="">aqui.</a></label>
                 </div>
             }
         </div>

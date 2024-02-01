@@ -14,16 +14,9 @@
         <hr>
     </header>
     <div class="controles-minhas-compras">
-        <app-card-meu-curso [mostrarValor]="true" (click)="aoClicarNoCard()"></app-card-meu-curso>
-        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
-        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
-        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
-        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
-        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
-        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
-        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
-        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
-        <app-card-meu-curso [mostrarValor]="true"></app-card-meu-curso>
+        @for (item of listaCursos; track $index) {
+        <app-card-meu-curso [objetoCurso]=item [mostrarValor]="true" (click)="aoClicarNoCard()"></app-card-meu-curso>
+        }
     </div>
     <app-rodape></app-rodape>
 </div>

@@ -1,11 +1,10 @@
 <div class="container">
-    <img src="https://img.freepik.com/fotos-gratis/abstrato-de-lampada-criativa-em-ia-generativa-de-fundo-azul-brilhante_188544-8090.jpg?w=360&t=st=1706461004~exp=1706461604~hmac=9b70df1ea72a60c2b91065cd667a1510a3bd0e3e7b208045b3ba75c7a5d2e122"
-        alt="">
+    <img src={{objetoCurso.linkBanner}} id="banner-card" alt="">
     @if (mostrarValor) {
-    <span class="titulo-com-valor">Intensivo de python</span>
-    <span id="valor">R$ 58,60</span>
+    <span class="titulo-com-valor">{{objetoCurso.titulo}}</span>
+    <span id="valor">{{objetoCurso.preco}}</span>
     }
     @else {
-        <span class="titulo-sem-valor">Intensivo de python</span>
+    <span class="titulo-sem-valor">{{objetoCurso.titulo}}</span>
     }
 </div>

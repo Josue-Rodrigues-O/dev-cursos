@@ -3,6 +3,7 @@ import { BarraSuperiorComponent } from "../../componentes/barra-superior/barra-s
 import { CardMeuCursoComponent } from "../../componentes/card-meu-curso/card-meu-curso.component";
 import { RodapeComponent } from "../../componentes/rodape/rodape.component";
 import { Router } from '@angular/router';
+import { CursosService } from '../../servicos/cursos.service';
 
 @Component({
     selector: 'app-pagina-mercado',
@@ -12,8 +13,13 @@ import { Router } from '@angular/router';
     imports: [BarraSuperiorComponent, CardMeuCursoComponent, RodapeComponent]
 })
 export class PaginaMercadoComponent {
-    constructor(private route: Router){}
-    aoClicarNoCard(){
+    constructor(private route: Router, private cursos: CursosService) { }
+
+    listaCursos = this.cursos.getLista();
+
+    titulo = ""
+
+    aoClicarNoCard() {
         this.route.navigate(["detalhes-do-curso"])
     }
 }

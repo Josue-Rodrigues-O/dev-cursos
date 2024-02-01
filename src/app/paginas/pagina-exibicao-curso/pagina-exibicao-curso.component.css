@@ -69,6 +69,10 @@ progress{
     padding-right: 2vh;
 }
 
+.item-lista:hover {
+    cursor: pointer;
+    background-color: #E1E1E1;
+}
 
 .check-box:hover {
     cursor: pointer;

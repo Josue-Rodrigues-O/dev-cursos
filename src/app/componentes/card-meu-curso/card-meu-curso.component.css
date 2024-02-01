@@ -1,3 +1,7 @@
+img{
+    filter: opacity(55%);
+}
+
 .container {
     width: 250px;
     height: 300px;
@@ -6,7 +10,7 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    background-color: #E1E1E1;
+    background-color: black;
     margin-bottom: 10vh;
 }
 

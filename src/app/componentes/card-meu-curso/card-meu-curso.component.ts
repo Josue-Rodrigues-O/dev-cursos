@@ -1,4 +1,5 @@
 import { Component, Input } from '@angular/core';
+import { Curso } from '../../interfaces/curso';
 
 @Component({
   selector: 'app-card-meu-curso',
@@ -10,12 +11,19 @@ import { Component, Input } from '@angular/core';
 export class CardMeuCursoComponent {
   mouseEnter = false
   @Input() mostrarValor!: boolean;
+  @Input() objetoCurso!: Curso
+  @Input() titulo!: string
+  @Input() preco!: string
+  @Input() linkBanner!: string
+
   classeTitulo = ""
 
-  constructor(){
+  constructor() {
+    console.log(this.objetoCurso)
+    // document.getElementById("banner-card")?.setAttribute("src", "");
     if (this.mostrarValor) {
       this.classeTitulo = "titulo-com-valor"
-    }else{
+    } else {
       this.classeTitulo = "titulo-sem-valor"
     }
   }

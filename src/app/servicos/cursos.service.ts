@@ -104,6 +104,108 @@ export class CursosService {
           concluido: false
         }
       ]
+    },
+    {
+      id: 2,
+      autor: "Programação Web",
+      linkFotoCanal: "https://yt3.googleusercontent.com/9BRgj8iK30H0ALNbG1-U5uyi77CrO6yoIzI8a-KVQYRuGk19Bdqp7C7pB7XhTLfxFQGAE1ipsEQ=s176-c-k-c0x00ffffff-no-rj",
+      linkCanal: "https://www.youtube.com/@programacaoweb",
+      titulo: "Curso de HTML Completo",
+      quantidadeVideos: 15,
+      preco: "52,30",
+      linkBanner: "https://img.freepik.com/fotos-gratis/um-homem-de-oculos-trabalha-em-um-computador-tarde-da-noite_169016-14891.jpg?w=360&t=st=1706813287~exp=1706813887~hmac=d5eeb2cdeaf449d8e6252911c1d5e87c11e8461b04884c34b8d5500b9f98c643",
+      tabelaVideos: [
+        {
+          id: 1,
+          titulo: "Curso de HTML Completo: Aula 01 - Criando novo projeto",
+          linkVideo: "https://www.youtube.com/embed/sj0p9O85AIg?si=OuMbO7H1n2_hSfal",
+          concluido: false
+        },
+        {
+          id: 2,
+          titulo: "Curso de HTML Completo: Aula 02 - Estrutura Básica",
+          linkVideo: "https://www.youtube.com/embed/MOd8PCyEB88?si=QCRKOiHRsXbG4Tbn",
+          concluido: false
+        },
+        {
+          id: 3,
+          titulo: "Curso de HTML Completo: Aula 03 - Meta Tags, Cabeçalho e Parágrafo",
+          linkVideo: "https://www.youtube.com/embed/1ntb19o-2MI?si=G7lJTDPJpNtrc2D9",
+          concluido: false
+        },
+        {
+          id: 4,
+          titulo: "Curso de HTML Completo: Aula 04 - Formatação de Texto",
+          linkVideo: "https://www.youtube.com/embed/RiGo7BN1Wps?si=dK6EtNAZv766W6Tu",
+          concluido: false
+        },
+        {
+          id: 5,
+          titulo: "Curso de HTML Completo: Aula 05 - Elementos de Citação",
+          linkVideo: "https://www.youtube.com/embed/bzWtE7GFi0Y?si=8wlK8kP9nPkVtSJO",
+          concluido: false
+        },
+        {
+          id: 6,
+          titulo: "Curso de HTML Completo: Aula 06 - Comentários",
+          linkVideo: "https://www.youtube.com/embed/Sl0edqPVrGg?si=EPnM2k1exkZqjMjT",
+          concluido: false
+        },
+        {
+          id: 7,
+          titulo: "Curso de HTML Completo: Aula 07 - Links",
+          linkVideo: "https://www.youtube.com/embed/eb5tPfOeexI?si=FyCsc4v1HfB3vKWB",
+          concluido: false
+        },
+        {
+          id: 8,
+          titulo: "Curso de HTML Completo: Aula 08 - Tudo Sobre Imagens",
+          linkVideo: "https://www.youtube.com/embed/2FvW812Up1U?si=A6xR3DFIEYLEJ3-M",
+          concluido: false
+        },
+        {
+          id: 9,
+          titulo: "Curso HTML Completo: Aula 09 - Tabelas",
+          linkVideo: "https://www.youtube.com/embed/tTUdJlcjEo4?si=T7um9fIoRgbvA6ZK",
+          concluido: false
+        },
+        {
+          id: 10,
+          titulo: "Curso HTML Completo: Aula 10 - Listas",
+          linkVideo: "https://www.youtube.com/embed/0pShBr4Qmt0?si=iZpEcZeNFIuvyu8K",
+          concluido: false
+        },
+        {
+          id: 11,
+          titulo: "Curso de HTML Completo: Aula 11 - iframes",
+          linkVideo: "https://www.youtube.com/embed/448sdzWsnMs?si=MDcY26P1ATYPBe0H",
+          concluido: false
+        },
+        {
+          id: 12,
+          titulo: "Curso de HTML Completo: Aula 12 - Formulários",
+          linkVideo: "https://www.youtube.com/embed/7eZJFftCbVQ?si=tSRmDQSWc1WIqFQ1",
+          concluido: false
+        },
+        {
+          id: 13,
+          titulo: "Curso de HTML Completo: Aula 13 - Áudio",
+          linkVideo: "https://www.youtube.com/embed/ImZoGl-pjVw?si=mchjeH40JOGk_R49",
+          concluido: false
+        },
+        {
+          id: 14,
+          titulo: "Curso de HTML Completo: Aula 14 - Vídeos",
+          linkVideo: "https://www.youtube.com/embed/BwDPP6mfdWU?si=BARWyfB-YpNzMhX2",
+          concluido: false
+        },
+        {
+          id: 15,
+          titulo: "Curso HTML Completo: Aula 15 - Div e HTML Semântico",
+          linkVideo: "https://www.youtube.com/embed/B2ZiOfoQ4wI?si=pSH0vk7iK3mrlYDF",
+          concluido: false
+        }
+      ]
     }
   ]
 

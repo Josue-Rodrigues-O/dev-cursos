@@ -43,7 +43,7 @@ a:hover {
 
 .comprar {
     width: 20vw;
-    border: 1px solid #E1E1E1;
+    border: 0.1vh solid #E1E1E1;
     display: flex;
     flex-direction: column;
     padding: 5vh;
@@ -73,25 +73,25 @@ a:hover {
 .abas {
     display: flex;
     height: 10vh;
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 0.1vh solid #E1E1E1;
 }
 
 .div-aba-selecionada {
-    padding: 0 10px 0 10px;
+    padding: 0 2vh 0 2vh;
     height: 98%;
-    width: 150px;
+    width: 12vw;
     display: flex;
     align-items: center;
     justify-content: center;
     transition: background-color 400ms ease;
     font-weight: bold;
-    border-bottom: solid 3px #007DFE;
+    border-bottom: solid 0.5vh #007DFE;
 }
 
 .div-aba-nao-selecionada {
-    padding: 0 10px 0 10px;
+    padding: 0 2vh 0 2vh;
     height: 98%;
-    width: 150px;
+    width: 12vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -102,7 +102,7 @@ a:hover {
 .div-aba-selecionada:hover,
 .div-aba-nao-selecionada:hover {
     cursor: pointer;
-    border-bottom: solid 3px #007DFE;
+    border-bottom: solid 0.5vh #007DFE;
 }
 
 .video {
@@ -110,7 +110,7 @@ a:hover {
     align-items: center;
     flex-wrap: wrap;
     height: 10vh;
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 0.1vh solid #E1E1E1;
     font-weight: bold;
     justify-content: space-between;
 }
@@ -125,8 +125,8 @@ a:hover {
 
 .icone-perfil {
     /* background-image: url("https://yt3.ggpht.com/ytc/AIf8zZSZZQG9pyMudyy_wzZi5ecXIR_nS2LlAzKsEZ5IWQ=s48-c-k-c0x00ffffff-no-rj"); */
-    height: 50px;
-    width: 50px;
+    height: 10vh;
+    width: 10vh;
     border-radius: 50%;
     margin-right: 2vh;
 }

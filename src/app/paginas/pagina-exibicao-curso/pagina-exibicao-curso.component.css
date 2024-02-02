@@ -53,7 +53,7 @@ progress{
     height: 8vh;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 0.1vh solid #E1E1E1;
     padding-left: 3vh;
     font-weight: bold;
     font-size: 3vh;
@@ -64,7 +64,7 @@ progress{
     min-height: 8vh;
     display: flex;
     align-items: center;
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 0.1vh solid #E1E1E1;
     padding-left: 3vh;
     padding-right: 2vh;
 }
@@ -87,4 +87,8 @@ progress{
 
 .barra-progresso{
     margin-right: 3vh;
+}
+
+.material-symbols-outlined{
+    font-size: 4vh;
 }

@@ -3,7 +3,7 @@ section{
 }
 
 p, strong{
-    font-size: 24px;
+    font-size: 4vh;
     color: black;
 }
 
@@ -16,7 +16,7 @@ p, strong{
     position: absolute;
     left: 15vh;
     top: 20vh;
-    font-size: 50px;
+    font-size: 8.5vh;
 }
 
 .card-flutuante{
@@ -29,7 +29,7 @@ p, strong{
     left: 15vh;
     top: 55vh;
     padding: 5vh;
-    font-size: 30px;
+    font-size: 5vh;
 }
 
 .card-2{
@@ -39,7 +39,7 @@ p, strong{
     width: 70%;
     height: 50vh;
     padding: 5vh;
-    font-size: 30px;
+    font-size: 5vh;
 }
 
 .section-textos{
@@ -54,7 +54,7 @@ p, strong{
 
 .section-textos h1{
     color: #464B52;
-    font-size: 50px;
+    font-size: 8.5vh;
     margin-left: 15vh;
 }
 

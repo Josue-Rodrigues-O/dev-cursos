@@ -1,18 +1,18 @@
 import { Routes } from '@angular/router';
-import { PaginaEntrarComponent } from './paginas/pagina-entrar/pagina-entrar.component';
-import { PaginaCadastrarComponent } from './paginas/pagina-cadastrar/pagina-cadastrar.component';
-import { PaginaAreaDoConsumidorComponent } from './paginas/pagina-area-do-consumidor/pagina-area-do-consumidor.component';
-import { PaginaMercadoComponent } from './paginas/pagina-mercado/pagina-mercado.component';
-import { PaginaAquisicaoCursoComponent } from './paginas/pagina-aquisicao-curso/pagina-aquisicao-curso.component';
-import { PaginaExibicaoCursoComponent } from './paginas/pagina-exibicao-curso/pagina-exibicao-curso.component';
-import { PaginaDoacaoComponent } from './paginas/pagina-doacao/pagina-doacao.component';
+import { PageLoginComponent } from './paginas/page-login/page-login.component';
+import { PageRegisterComponent } from './paginas/page-register/page-register.component';
+import { PageMainComponent } from './paginas/page-main/page-main.component';
+import { PageMarketplaceComponent } from './paginas/page-marketplace/page-marketplace.component';
+import { PageAcquisitionComponent } from './paginas/page-acquisition/page-acquisition.component';
+import { PageCourseComponent } from './paginas/page-course/page-course.component';
+import { PageAboutComponent } from './paginas/page-about/page-about.component';
 
 export const routes: Routes = [
-    {path: '', component: PaginaEntrarComponent},
-    {path: 'cadastrar', component: PaginaCadastrarComponent},
-    {path: 'area-do-consumidor', component: PaginaAreaDoConsumidorComponent},
-    {path: 'mercado', component: PaginaMercadoComponent},
-    {path: 'detalhes-do-curso/:id', component: PaginaAquisicaoCursoComponent},
-    {path: 'curso/:id', component: PaginaExibicaoCursoComponent},
-    {path: 'pagina-doacao', component: PaginaDoacaoComponent}
+    {path: '', component: PageLoginComponent},
+    {path: 'cadastrar', component: PageRegisterComponent},
+    {path: 'area-do-consumidor', component: PageMainComponent},
+    {path: 'mercado', component: PageMarketplaceComponent},
+    {path: 'detalhes-do-curso/:id', component: PageAcquisitionComponent},
+    {path: 'curso/:id', component: PageCourseComponent},
+    {path: 'pagina-doacao', component: PageAboutComponent}
 ];

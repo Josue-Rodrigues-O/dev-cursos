@@ -1,17 +1,17 @@
 import { Component, OnInit } from '@angular/core';
 import { BarraSuperiorComponent } from "../../componentes/barra-superior/barra-superior.component";
-import { CursosService } from '../../servicos/cursos.service';
+import { CursosService } from '../../services/cursos.service';
 import { ActivatedRoute } from '@angular/router';
 import { Video } from '../../interfaces/video';
 
 @Component({
-    selector: 'app-pagina-exibicao-curso',
+    selector: 'app-page-course',
     standalone: true,
-    templateUrl: './pagina-exibicao-curso.component.html',
-    styleUrl: './pagina-exibicao-curso.component.css',
+    templateUrl: './page-course.component.html',
+    styleUrl: './page-course.component.css',
     imports: [BarraSuperiorComponent]
 })
-export class PaginaExibicaoCursoComponent implements OnInit {
+export class PageCourseComponent implements OnInit {
     objetoRecebido!: any
     id!: any
     tituloVideo!: string

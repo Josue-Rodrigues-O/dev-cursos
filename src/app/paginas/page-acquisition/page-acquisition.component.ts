@@ -3,16 +3,16 @@ import { BarraSuperiorComponent } from "../../componentes/barra-superior/barra-s
 import { RodapeComponent } from "../../componentes/rodape/rodape.component";
 import { Curso } from '../../interfaces/curso';
 import { ActivatedRoute } from '@angular/router';
-import { CursosService } from '../../servicos/cursos.service';
+import { CursosService } from '../../services/cursos.service';
 
 @Component({
-    selector: 'app-pagina-aquisicao-curso',
+    selector: 'app-page-acquisition',
     standalone: true,
-    templateUrl: './pagina-aquisicao-curso.component.html',
-    styleUrl: './pagina-aquisicao-curso.component.css',
+    templateUrl: './page-acquisition.component.html',
+    styleUrl: './page-acquisition.component.css',
     imports: [BarraSuperiorComponent, RodapeComponent]
 })
-export class PaginaAquisicaoCursoComponent implements OnInit {
+export class PageAcquisitionComponent implements OnInit {
     link: any = "https://www.youtube.com/embed/3tmA3dboV0I?si=Lz5N9VwicWrCDylf"
 
     classeAba1 = "div-aba-selecionada";

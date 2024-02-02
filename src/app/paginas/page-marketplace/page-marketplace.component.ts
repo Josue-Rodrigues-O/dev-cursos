@@ -3,17 +3,17 @@ import { BarraSuperiorComponent } from "../../componentes/barra-superior/barra-s
 import { CardMeuCursoComponent } from "../../componentes/card-meu-curso/card-meu-curso.component";
 import { RodapeComponent } from "../../componentes/rodape/rodape.component";
 import { Router } from '@angular/router';
-import { CursosService } from '../../servicos/cursos.service';
+import { CursosService } from '../../services/cursos.service';
 import { Curso } from '../../interfaces/curso';
 
 @Component({
-    selector: 'app-pagina-mercado',
+    selector: 'app-page-marketplace',
     standalone: true,
-    templateUrl: './pagina-mercado.component.html',
-    styleUrl: './pagina-mercado.component.css',
+    templateUrl: './page-marketplace.component.html',
+    styleUrl: './page-marketplace.component.css',
     imports: [BarraSuperiorComponent, CardMeuCursoComponent, RodapeComponent]
 })
-export class PaginaMercadoComponent {
+export class PageMarketplaceComponent {
     constructor(private route: Router, private cursos: CursosService) { }
 
     listaCursos = this.cursos.getLista();

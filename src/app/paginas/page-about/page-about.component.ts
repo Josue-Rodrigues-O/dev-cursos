@@ -3,12 +3,12 @@ import { BarraSuperiorComponent } from "../../componentes/barra-superior/barra-s
 import { RodapeComponent } from "../../componentes/rodape/rodape.component";
 
 @Component({
-    selector: 'app-pagina-doacao',
+    selector: 'app-page-about',
     standalone: true,
-    templateUrl: './pagina-doacao.component.html',
+    templateUrl: './page-about.component.html',
     styleUrl: './pagina-doacao.component.css',
     imports: [BarraSuperiorComponent, RodapeComponent]
 })
-export class PaginaDoacaoComponent {
+export class PageAboutComponent {
 
 }

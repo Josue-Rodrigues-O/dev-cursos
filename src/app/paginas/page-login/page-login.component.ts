@@ -3,13 +3,13 @@ import { Router } from '@angular/router';
 import { BarraSuperiorComponent } from "../../componentes/barra-superior/barra-superior.component";
 
 @Component({
-  selector: 'app-pagina-entrar',
+  selector: 'app-page-login',
   standalone: true,
-  templateUrl: './pagina-entrar.component.html',
+  templateUrl: './page-login.component.html',
   styleUrl: './pagina-entrar.component.css',
   imports: [BarraSuperiorComponent]
 })
-export class PaginaEntrarComponent {
+export class PageLoginComponent {
   mostrarErroEmail = false
   mostrarErroSenha = false
 

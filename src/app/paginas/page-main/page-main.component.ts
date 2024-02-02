@@ -3,17 +3,17 @@ import { BarraSuperiorComponent } from "../../componentes/barra-superior/barra-s
 import { RodapeComponent } from "../../componentes/rodape/rodape.component";
 import { CardMeuCursoComponent } from "../../componentes/card-meu-curso/card-meu-curso.component";
 import { Router } from '@angular/router';
-import { CursosService } from '../../servicos/cursos.service';
+import { CursosService } from '../../services/cursos.service';
 import { Curso } from '../../interfaces/curso';
 
 @Component({
-    selector: 'app-pagina-area-do-consumidor',
+    selector: 'app-page-main',
     standalone: true,
-    templateUrl: './pagina-area-do-consumidor.component.html',
-    styleUrl: './pagina-area-do-consumidor.component.css',
+    templateUrl: './page-main.component.html',
+    styleUrl: './page-main.component.css',
     imports: [BarraSuperiorComponent, RodapeComponent, CardMeuCursoComponent]
 })
-export class PaginaAreaDoConsumidorComponent {
+export class PageMainComponent {
     constructor(private route: Router, private cursos: CursosService){}
 
     listaCard: number[] = [1,2]

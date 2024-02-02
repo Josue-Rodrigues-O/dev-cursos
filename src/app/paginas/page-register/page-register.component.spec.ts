@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaginaCadastrarComponent } from './pagina-cadastrar.component';
+import { PageRegisterComponent } from './page-register.component';
 
-describe('PaginaCadastrarComponent', () => {
-  let component: PaginaCadastrarComponent;
-  let fixture: ComponentFixture<PaginaCadastrarComponent>;
+describe('PageRegisterComponent', () => {
+  let component: PageRegisterComponent;
+  let fixture: ComponentFixture<PageRegisterComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PaginaCadastrarComponent]
+      imports: [PageRegisterComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(PaginaCadastrarComponent);
+    fixture = TestBed.createComponent(PageRegisterComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

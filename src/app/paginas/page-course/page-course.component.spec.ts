@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PaginaMercadoComponent } from './pagina-mercado.component';
+import { PageCourseComponent } from './page-course.component';
 
-describe('PaginaMercadoComponent', () => {
-  let component: PaginaMercadoComponent;
-  let fixture: ComponentFixture<PaginaMercadoComponent>;
+describe('PageCourseComponent', () => {
+  let component: PageCourseComponent;
+  let fixture: ComponentFixture<PageCourseComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PaginaMercadoComponent]
+      imports: [PageCourseComponent]
     })
     .compileComponents();
     
-    fixture = TestBed.createComponent(PaginaMercadoComponent);
+    fixture = TestBed.createComponent(PageCourseComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

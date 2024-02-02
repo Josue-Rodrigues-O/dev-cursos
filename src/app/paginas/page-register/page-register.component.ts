@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-pagina-cadastrar',
+  selector: 'app-page-register',
   standalone: true,
   imports: [],
-  templateUrl: './pagina-cadastrar.component.html',
+  templateUrl: './page-register.component.html',
   styleUrl: './pagina-cadastrar.component.css'
 })
-export class PaginaCadastrarComponent {
+export class PageRegisterComponent {
   constructor(private route: Router){}
 
   aoClicarEntrar() {

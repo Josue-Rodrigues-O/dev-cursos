@@ -1,21 +1,20 @@
 .imgLogo {
     border-radius: 2vh;
-    height: 60px;
+    height: 10vh;
 }
 
 .linksDoHeader {
     height: 100%;
-    /* width: 420px; */
     justify-content: space-between;
     display: flex;
     flex-direction: row;
-    margin-left: 30px;
+    margin-left: 5vh;
 }
 
 .div-link {
-    padding: 0 10px 0 10px;
+    padding: 0 1.5vh 0 1.5vh;
     height: 100%;
-    width: 150px;
+    width: 22.5vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -24,7 +23,7 @@
 
 .div-link:hover {
     cursor: pointer;
-    border-bottom: solid 3px #007DFE;
+    border-bottom: solid 0.5vh #007DFE;
     background-color: #64aef72d;
 }
 
@@ -39,7 +38,7 @@
 .input-pesquisa{
     width: 85%;
     height: 6vh;
-    border: solid 1px #000000a6;
+    border: solid 0.1vh #000000a6;
     border-right: none;
     border-radius: 2vh 0px 0px 2vh;
     transition: backgorund-color 400ms ease;
@@ -54,8 +53,8 @@
 }
 
 #search {
-    width: 15%;
-    border: solid 1px #000000a6;
+    width: 8%;
+    border: solid 0.1vh #000000a6;
     border-radius: 0px 2vh 2vh 0px;
     height: 6vh;
     border-left: none;
@@ -63,6 +62,7 @@
     justify-content: center;
     align-items: center;
     color: #0000005d;
+    font-size: 4.5vh;
 }
 
 #search:hover {
@@ -100,7 +100,7 @@ a {
     justify-content: space-between;
     align-items: center;
     background-color: white;
-    border-bottom: 1px solid #E1E1E1;
+    border-bottom: 0.1vh solid #E1E1E1;
 }
 
 .nav-bar {

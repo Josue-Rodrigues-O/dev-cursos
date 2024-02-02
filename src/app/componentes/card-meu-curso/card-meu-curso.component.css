@@ -3,8 +3,8 @@ img{
 }
 
 .container {
-    width: 250px;
-    height: 300px;
+    width: 18vw;
+    height: 25vw;
     border-radius: 1vh;
     overflow: hidden;
     display: flex;
@@ -53,7 +53,7 @@ img{
     position: absolute;
     margin-left: 2.8vh;
     margin-bottom: 8.5vh;
-    width: calc(250px - 2.8vh);
+    width: calc(18vw - 2.8vh);
     display: flex;
 }
 
@@ -61,7 +61,7 @@ img{
     position: absolute;
     margin-left: 2.8vh;
     margin-bottom: 3vh;
-    width: calc(250px - 2.8vh);
+    width: calc(18vw - 2.8vh);
 }
 
 #valor{

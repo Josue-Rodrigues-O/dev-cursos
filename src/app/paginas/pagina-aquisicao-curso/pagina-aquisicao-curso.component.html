@@ -2,10 +2,11 @@
     <app-barra-superior></app-barra-superior>
     <div class="conteudo">
         <h1>{{objetoRecebido?.titulo}}</h1>
-        <iframe src={{link}} title="YouTube video player"
-            frameborder="0"
+        @if (podeExibir) {
+        <iframe id="video" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
+        }
         <div class="descricao-curso">
             <div class="abas">
                 <div [className]="classeAba1" (click)="aoClicarAba1()">Conteúdo</div>
@@ -13,7 +14,16 @@
             </div>
             @if (aba1) {
             <div class="conteudo-curso">
+                <div class="video">
+                    <span>
+                        {{ objetoRecebido.tabelaVideos[0].titulo }}
+                    </span>
+                    <span class="material-symbols-outlined lock-open">
+                        lock_open
+                    </span>
+                </div>
                 @for (item of objetoRecebido?.tabelaVideos; track $index) {
+                @if (item.id != 1) {
                 <div class="video">
                     <span>
                         {{ item.titulo }}
@@ -22,6 +32,7 @@
                         lock
                     </span>
                 </div>
+                }
                 }
             </div>
             }@else {
@@ -32,7 +43,8 @@
                     <img id="imagem-icone" src={{objetoRecebido?.linkFotoCanal}} alt="" class="icone-perfil">
                     <p>{{ objetoRecebido?.autor }}</p>
                 </div>
-                <label for="">Conheça mais sobre <strong>{{ objetoRecebido?.autor }}</strong> clicando <a href={{objetoRecebido?.linkCanal}}>aqui.</a></label>
+                <label for="">Conheça mais sobre <strong>{{ objetoRecebido?.autor }}</strong> clicando <a
+                        href={{objetoRecebido?.linkCanal}}>aqui.</a></label>
             </div>
             }
         </div>

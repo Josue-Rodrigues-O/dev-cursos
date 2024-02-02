@@ -214,6 +214,7 @@ export class CursosService {
   }
 
   public obterLink(id: any) {
-    return this.listaDeCursos.find(x => x.id == id)?.tabelaVideos[0].linkVideo
+    // return this.listaDeCursos.find(x => x.id == id)?.tabelaVideos[0].linkVideo
+    return "https://www.youtube.com/embed/3tmA3dboV0I?si=Lz5N9VwicWrCDylf"
   }
 }

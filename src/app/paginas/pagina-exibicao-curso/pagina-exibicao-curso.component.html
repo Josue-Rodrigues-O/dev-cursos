@@ -1,25 +1,32 @@
 <div class="container">
     <app-barra-superior></app-barra-superior>
     <div class="container-video">
-        <iframe src="https://www.youtube.com/embed/bCFTv8a59PE?si=BzljmzNWcJI1kAUx" title="YouTube video player"
-            frameborder="0"
+        <iframe id="video" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
         <div class="avaliacao">
-            <h2>Curso de HTML e CSS - Estrutura básica do HTML - Aula 1</h2>
+            <h2>{{tituloVideo}}</h2>
         </div>
     </div>
     <div class="container-lista-videos">
         <div class="cabecalho-lista">
             <span>Conteúdo do curso</span>
             <div class="barra-progresso">
-                <progress value="70" max="100"></progress>
-                <span>70%</span>
+                <progress value={{valorProgresso}} max={{objetoRecebido.quantidadeVideos}}></progress>
+                <span>{{porcentagem}}%</span>
             </div>
         </div>
-        <div class="item-lista">
-            <span class="material-symbols-outlined check-box">check_box_outline_blank</span>
-            <p>Curso de HTML e CSS - Estrutura básica do HTML - Aula 1</p>
+        @for (item of objetoRecebido.tabelaVideos; track $index) {
+        <div class="item-lista" (click)="aoClicarNaAula(item)">
+            @if (item.concluido) {
+            <span class="material-symbols-outlined check-box"
+                (click)="aoClicarEmConcluido(item)">check_box</span>
+            }@else {
+            <span class="material-symbols-outlined check-box"
+                (click)="aoClicarEmConcluido(item)">check_box_outline_blank</span>
+            }
+            <p>{{item.titulo}}</p>
         </div>
+        }
     </div>
 </div>

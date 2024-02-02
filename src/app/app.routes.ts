@@ -13,6 +13,6 @@ export const routes: Routes = [
     {path: 'area-do-consumidor', component: PaginaAreaDoConsumidorComponent},
     {path: 'mercado', component: PaginaMercadoComponent},
     {path: 'detalhes-do-curso/:id', component: PaginaAquisicaoCursoComponent},
-    {path: 'curso', component: PaginaExibicaoCursoComponent},
+    {path: 'curso/:id', component: PaginaExibicaoCursoComponent},
     {path: 'pagina-doacao', component: PaginaDoacaoComponent}
 ];

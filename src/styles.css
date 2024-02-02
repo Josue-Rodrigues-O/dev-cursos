@@ -1,6 +1,6 @@
 * {
     font-family: 'Roboto', sans-serif;
-    font-size: 1rem;
+    font-size: 2.9vh;
 }
 
 html,
@@ -17,8 +17,8 @@ input {
     margin: 0;
     padding: 0;
     height: 8vh;
-    border-radius: 0.3rem;
-    border: 1px solid #E1E1E1;
+    border-radius: 1vh;
+    border: 0.2vh solid #E1E1E1;
     padding-left: 2.5vh;
     outline: 0px;
 }
@@ -71,7 +71,7 @@ hr {
 }
 
 *::-webkit-scrollbar {
-    width: 12px;
+    width: 1vw;
     /* width of the entire scrollbar */
 }
 
@@ -83,8 +83,8 @@ hr {
 *::-webkit-scrollbar-thumb {
     background-color: #465D64;
     /* color of the scroll thumb */
-    border-radius: 20px;
+    border-radius: 1vw;
     /* roundness of the scroll thumb */
-    border: 3px solid #E1E1E1;
+    border: 0.22vw solid #E1E1E1;
     /* creates padding around scroll thumb */
 }

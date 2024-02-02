@@ -209,12 +209,17 @@ export class CursosService {
     }
   ]
 
+  public listaMeusCursos: Array<Curso> = []
+
   public getLista() {
     return this.listaDeCursos
   }
 
-  public obterLink(id: any) {
-    // return this.listaDeCursos.find(x => x.id == id)?.tabelaVideos[0].linkVideo
-    return "https://www.youtube.com/embed/3tmA3dboV0I?si=Lz5N9VwicWrCDylf"
+  public getMeusCursos() {
+    // return this.listaMeusCursos;
+    return this.listaDeCursos
+  }
+  public adicionarCurso(objeto: Curso) {
+    this.listaMeusCursos.push(objeto)
   }
 }

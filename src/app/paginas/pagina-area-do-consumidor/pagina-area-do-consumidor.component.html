@@ -5,8 +5,13 @@
         <hr>
     </header>
     <div class="controles-minhas-compras">
-        @for (item of listaCard; track $index) {
+        <!-- @for (item of listaCard; track $index) {
         <app-card-meu-curso (click)="aoClicarNoCard()" [mostrarValor]="false"></app-card-meu-curso>
+        } -->
+
+        @for (item of listaMeusCursos; track $index) {
+        <app-card-meu-curso [objetoCurso]=item [mostrarValor]="false"
+            (click)="aoClicarNoCard(item.id)"></app-card-meu-curso>
         }
     </div>
     <div class="banner" (click)="aoClicarNoBanner()">

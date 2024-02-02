@@ -52,7 +52,7 @@
     <div class="comprar">
         <h1>R$ {{ objetoRecebido?.preco }}</h1>
         <p>em até 6x sem juros</p>
-        <button>Ir para o carrinho</button>
+        <button (click)="aoClicarButton(objetoRecebido)">Ir para o carrinho</button>
         <div class="icone-texto">
             <span class="material-symbols-outlined">star</span>
             <p>5</p>

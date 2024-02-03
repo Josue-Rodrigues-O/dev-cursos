@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { BarraSuperiorComponent } from "../../componentes/barra-superior/barra-superior.component";
+import { NavBarComponent } from "../../components/nav-bar/nav-bar.component";
 import { CursosService } from '../../services/cursos.service';
 import { ActivatedRoute } from '@angular/router';
 import { Video } from '../../interfaces/video';
@@ -9,7 +9,7 @@ import { Video } from '../../interfaces/video';
     standalone: true,
     templateUrl: './page-course.component.html',
     styleUrl: './page-course.component.css',
-    imports: [BarraSuperiorComponent]
+    imports: [NavBarComponent]
 })
 export class PageCourseComponent implements OnInit {
     objetoRecebido!: any

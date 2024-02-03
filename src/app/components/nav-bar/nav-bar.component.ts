@@ -2,13 +2,13 @@ import { Component } from '@angular/core';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-barra-superior',
+  selector: 'app-nav-bar',
   standalone: true,
   imports: [],
-  templateUrl: './barra-superior.component.html',
-  styleUrl: './barra-superior.component.css'
+  templateUrl: './nav-bar.component.html',
+  styleUrl: './nav-bar.component.css'
 })
-export class BarraSuperiorComponent {
+export class NavBarComponent {
   constructor(private route: Router) { }
 
   navegarPara(link: any) {

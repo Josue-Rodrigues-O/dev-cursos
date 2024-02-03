@@ -2,13 +2,13 @@ import { Component, Input } from '@angular/core';
 import { Curso } from '../../interfaces/curso';
 
 @Component({
-  selector: 'app-card-meu-curso',
+  selector: 'app-card-course',
   standalone: true,
   imports: [],
-  templateUrl: './card-meu-curso.component.html',
-  styleUrl: './card-meu-curso.component.css'
+  templateUrl: './card-course.component.html',
+  styleUrl: './card-course.component.css'
 })
-export class CardMeuCursoComponent {
+export class CardCourseComponent {
   mouseEnter = false
   @Input() mostrarValor!: boolean;
   @Input() objetoCurso!: Curso

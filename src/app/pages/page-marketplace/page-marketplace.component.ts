@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
-import { BarraSuperiorComponent } from "../../componentes/barra-superior/barra-superior.component";
-import { CardMeuCursoComponent } from "../../componentes/card-meu-curso/card-meu-curso.component";
-import { RodapeComponent } from "../../componentes/rodape/rodape.component";
+import { NavBarComponent } from "../../components/nav-bar/nav-bar.component";
+import { CardCourseComponent } from "../../components/card-course/card-course.component";
+import { FooterComponent } from "../../components/footer/footer.component";
 import { Router } from '@angular/router';
 import { CursosService } from '../../services/cursos.service';
 import { Curso } from '../../interfaces/curso';
@@ -11,7 +11,7 @@ import { Curso } from '../../interfaces/curso';
     standalone: true,
     templateUrl: './page-marketplace.component.html',
     styleUrl: './page-marketplace.component.css',
-    imports: [BarraSuperiorComponent, CardMeuCursoComponent, RodapeComponent]
+    imports: [NavBarComponent, CardCourseComponent, FooterComponent]
 })
 export class PageMarketplaceComponent {
     constructor(private route: Router, private cursos: CursosService) { }

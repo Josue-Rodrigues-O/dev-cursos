@@ -1,6 +1,6 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { BarraSuperiorComponent } from "../../componentes/barra-superior/barra-superior.component";
-import { RodapeComponent } from "../../componentes/rodape/rodape.component";
+import { NavBarComponent } from "../../components/nav-bar/nav-bar.component";
+import { FooterComponent } from "../../components/footer/footer.component";
 import { Curso } from '../../interfaces/curso';
 import { ActivatedRoute } from '@angular/router';
 import { CursosService } from '../../services/cursos.service';
@@ -10,7 +10,7 @@ import { CursosService } from '../../services/cursos.service';
     standalone: true,
     templateUrl: './page-acquisition.component.html',
     styleUrl: './page-acquisition.component.css',
-    imports: [BarraSuperiorComponent, RodapeComponent]
+    imports: [NavBarComponent, FooterComponent]
 })
 export class PageAcquisitionComponent implements OnInit {
     link: any = "https://www.youtube.com/embed/3tmA3dboV0I?si=Lz5N9VwicWrCDylf"

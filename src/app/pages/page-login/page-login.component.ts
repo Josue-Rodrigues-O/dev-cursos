@@ -1,13 +1,13 @@
 import { Component } from '@angular/core';
 import { Router } from '@angular/router';
-import { BarraSuperiorComponent } from "../../componentes/barra-superior/barra-superior.component";
+import { NavBarComponent } from "../../components/nav-bar/nav-bar.component";
 
 @Component({
   selector: 'app-page-login',
   standalone: true,
   templateUrl: './page-login.component.html',
-  styleUrl: './pagina-entrar.component.css',
-  imports: [BarraSuperiorComponent]
+  styleUrl: './page-login.component.css',
+  imports: [NavBarComponent]
 })
 export class PageLoginComponent {
   mostrarErroEmail = false

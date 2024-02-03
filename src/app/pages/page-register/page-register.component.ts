@@ -6,7 +6,7 @@ import { Router } from '@angular/router';
   standalone: true,
   imports: [],
   templateUrl: './page-register.component.html',
-  styleUrl: './pagina-cadastrar.component.css'
+  styleUrl: './page-register.component.css'
 })
 export class PageRegisterComponent {
   constructor(private route: Router){}

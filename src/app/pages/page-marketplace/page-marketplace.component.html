@@ -1,5 +1,5 @@
 <div class="container">
-    <app-barra-superior></app-barra-superior>
+    <app-nav-bar></app-nav-bar>
     <div class="banner">
         <div class="texto">
             <h2>Descubra o poder da programação! Adquira seus cursos online agora e transforme sua carreira!</h2>
@@ -15,8 +15,8 @@
     </header>
     <div class="controles-minhas-compras">
         @for (item of listaCursos; track $index) {
-        <app-card-meu-curso [objetoCurso]=item [mostrarValor]="true" (click)="aoClicarNoCard(item.id)"></app-card-meu-curso>
+        <app-card-course [objetoCurso]=item [mostrarValor]="true" (click)="aoClicarNoCard(item.id)"></app-card-course>
         }
     </div>
-    <app-rodape></app-rodape>
+    <app-footer></app-footer>
 </div>

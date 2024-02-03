@@ -1,12 +1,11 @@
 <div class="container">
     <app-nav-bar></app-nav-bar>
     <div class="banner">
-        <div class="texto">
+        <div class="banner-texto">
             <h2>Descubra o poder da programação! Adquira seus cursos online agora e transforme sua carreira!</h2>
         </div>
-        <div class="imagem">
-            <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-sistema-operacional_114360-2195.jpg?w=740&t=st=1706610015~exp=1706610615~hmac=20e0d1496493e04e74a1df4023b2a7fb265bfcf762d8338e9b8425078fe3beae"
-                alt="">
+        <div class="banner-imagem">
+            <img src="https://img.freepik.com/vetores-gratis/ilustracao-do-conceito-de-sistema-operacional_114360-2195.jpg?w=740&t=st=1706610015~exp=1706610615~hmac=20e0d1496493e04e74a1df4023b2a7fb265bfcf762d8338e9b8425078fe3beae">
         </div>
     </div>
     <header>
@@ -14,9 +13,11 @@
         <hr>
     </header>
     <div class="controles-minhas-compras">
+
         @for (item of listaCursos; track $index) {
-        <app-card-course [objetoCurso]=item [mostrarValor]="true" (click)="aoClicarNoCard(item.id)"></app-card-course>
+            <app-card-course [objetoCurso]=item [mostrarValor]="true" (click)="aoClicarNoCard(item.id)"></app-card-course>
         }
+
     </div>
     <app-footer></app-footer>
 </div>

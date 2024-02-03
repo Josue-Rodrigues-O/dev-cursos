@@ -25,20 +25,9 @@ iframe {
     margin-bottom: 5vh;
 }
 
-a {
-    text-decoration: none;
-    font-weight: 500;
-    color: black;
-}
-
-a:hover {
-    color: #0062CF;
-}
-
 .conteudo {
     width: 63%;
     padding: 10vh;
-    padding-top: 20vh;
 }
 
 .comprar {
@@ -124,7 +113,6 @@ a:hover {
 }
 
 .icone-perfil {
-    /* background-image: url("https://yt3.ggpht.com/ytc/AIf8zZSZZQG9pyMudyy_wzZi5ecXIR_nS2LlAzKsEZ5IWQ=s48-c-k-c0x00ffffff-no-rj"); */
     height: 10vh;
     width: 10vh;
     border-radius: 50%;

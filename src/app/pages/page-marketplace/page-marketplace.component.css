@@ -15,7 +15,7 @@ h1 {
     margin-bottom: 2vh;
 }
 
-h2{
+h2 {
     margin-top: 5vh;
     margin-left: 5vh;
     font-family: 'Alfa Slab One', serif;
@@ -42,24 +42,23 @@ img {
     justify-items: center;
 }
 
-.banner{
+.banner {
     background: linear-gradient(to left, #0157BC, #007DFE);
     border-radius: 2vh;
     height: 50vh;
     margin: 10vh;
-    margin-top: 20vh;
     margin-bottom: 0;
     display: flex;
 }
 
-.texto{
+.banner-texto {
     width: 80%;
     color: white;
     display: flex;
     align-items: start;
 }
 
-.imagem{
+.banner-imagem {
     overflow: hidden;
     width: 50%;
     height: 100%;

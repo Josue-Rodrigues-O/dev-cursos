@@ -16,8 +16,6 @@ import { Curso } from '../../interfaces/curso';
 export class PageMainComponent {
     constructor(private route: Router, private cursos: CursosService){}
 
-    listaCard: number[] = [1,2]
-
     listaMeusCursos: Array<Curso> = this.cursos.getMeusCursos()
 
     aoClicarNoCard(id: any){

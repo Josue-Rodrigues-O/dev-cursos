@@ -9,13 +9,8 @@ import { Curso } from '../../interfaces/curso';
   styleUrl: './card-course.component.css'
 })
 export class CardCourseComponent {
-  mouseEnter = false
   @Input() mostrarValor!: boolean;
   @Input() objetoCurso!: Curso
-  @Input() titulo!: string
-  @Input() preco!: string
-  @Input() linkBanner!: string
-
   classeTitulo = ""
 
   constructor() {
@@ -24,9 +19,5 @@ export class CardCourseComponent {
     } else {
       this.classeTitulo = "titulo-sem-valor"
     }
-  }
-
-  aoPassarMouse() {
-    this.mouseEnter = !this.mouseEnter
   }
 }

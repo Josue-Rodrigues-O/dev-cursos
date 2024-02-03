@@ -5,27 +5,22 @@
         <hr>
     </header>
     <div class="controles-minhas-compras">
-        <!-- @for (item of listaCard; track $index) {
-        <app-card-course (click)="aoClicarNoCard()" [mostrarValor]="false"></app-card-course>
-        } -->
 
         @for (item of listaMeusCursos; track $index) {
-        <app-card-course [objetoCurso]=item [mostrarValor]="false"
-            (click)="aoClicarNoCard(item.id)"></app-card-course>
+            <app-card-course [objetoCurso]=item [mostrarValor]="false" (click)="aoClicarNoCard(item.id)"></app-card-course>
         }
+
     </div>
     <div class="banner" (click)="aoClicarNoBanner()">
-        <div class="texto">
-            <span id="primeiro-texto">Explore mais conteúdos no</span>
-            <span id="segundo-texto">nosso marktplace.</span>
+        <div class="banner-texto">
+            <span>Explore mais conteúdos no <br><strong>nosso marktplace.</strong></span>
             <p>Encontre os melhores conteúdos, em um ambiente seguro e cheio de funcionalidades, de onde você estiver.
             </p>
             <button>Quero explorar!</button>
         </div>
-        <div class="icone">
-            <div class="icon">
-                <img src="https://img.freepik.com/vetores-premium/icone-de-compras-on-line-da-cesta-de-compras-isometrico-do-icone-do-vetor-de-compras-on-line-da-cesta-de-compras-para-web-design-isolado-em-fundo-branco_96318-103041.jpg?w=740"
-                    alt="">
+        <div class="banner-icone">
+            <div class="icone">
+                <img src="https://img.freepik.com/vetores-premium/icone-de-compras-on-line-da-cesta-de-compras-isometrico-do-icone-do-vetor-de-compras-on-line-da-cesta-de-compras-para-web-design-isolado-em-fundo-branco_96318-103041.jpg?w=740">
             </div>
         </div>
     </div>

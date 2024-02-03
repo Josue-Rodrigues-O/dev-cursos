@@ -9,7 +9,11 @@ import { Router } from '@angular/router';
   styleUrl: './page-register.component.css'
 })
 export class PageRegisterComponent {
-  constructor(private route: Router){}
+  emailInvalido: boolean = false
+  senhaInvalida: boolean = false
+  segundaSenhaDiferenteDaPrimeira: boolean = false
+
+  constructor(private route: Router) { }
 
   aoClicarEntrar() {
     this.route.navigate(['/area-do-consumidor'])

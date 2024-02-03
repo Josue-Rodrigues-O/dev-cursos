@@ -2,50 +2,49 @@
     <app-nav-bar></app-nav-bar>
     <div class="conteudo">
         <h1>{{objetoRecebido?.titulo}}</h1>
-        @if (podeExibir) {
         <iframe id="video" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
-        }
         <div class="descricao-curso">
             <div class="abas">
                 <div [className]="classeAba1" (click)="aoClicarAba1()">Conteúdo</div>
                 <div [className]="classeAba2" (click)="aoClicarAba2()">Detalhes do curso</div>
             </div>
+
             @if (aba1) {
-            <div class="conteudo-curso">
-                <div class="video">
-                    <span>
-                        {{ objetoRecebido.tabelaVideos[0].titulo }}
-                    </span>
-                    <span class="material-symbols-outlined lock-open">
-                        lock_open
-                    </span>
+                <div class="conteudo-curso">
+                    <div class="video">
+                        <span>
+                            {{ objetoRecebido.tabelaVideos[0].titulo }}
+                        </span>
+                        <span class="material-symbols-outlined lock-open">
+                            lock_open
+                        </span>
+                    </div>
+
+                    @for (item of objetoRecebido?.tabelaVideos; track $index) {
+                        @if (item.id != 1) {
+                        <div class="video">
+                            <span>
+                                {{ item.titulo }}
+                            </span>
+                            <span class="material-symbols-outlined">
+                                lock
+                            </span>
+                        </div>
+                        }
+                    }
                 </div>
-                @for (item of objetoRecebido?.tabelaVideos; track $index) {
-                @if (item.id != 1) {
-                <div class="video">
-                    <span>
-                        {{ item.titulo }}
-                    </span>
-                    <span class="material-symbols-outlined">
-                        lock
-                    </span>
+            }
+            @else {
+                <div class="detalhes-curso">
+                    <label>Criador do curso</label>
+                    <div class="autor">
+                        <img id="imagem-icone" src={{objetoRecebido?.linkFotoCanal}} alt="" class="icone-perfil">
+                        <p>{{ objetoRecebido?.autor }}</p>
+                    </div>
+                    <label>Conheça mais sobre <strong>{{ objetoRecebido?.autor }}</strong> clicando <a href={{objetoRecebido?.linkCanal}}>aqui.</a></label>
                 </div>
-                }
-                }
-            </div>
-            }@else {
-            <div class="detalhes-curso">
-                <label for="">Criador do curso</label>
-                <div class="autor">
-                    <!-- <div class="icone-perfil"></div> -->
-                    <img id="imagem-icone" src={{objetoRecebido?.linkFotoCanal}} alt="" class="icone-perfil">
-                    <p>{{ objetoRecebido?.autor }}</p>
-                </div>
-                <label for="">Conheça mais sobre <strong>{{ objetoRecebido?.autor }}</strong> clicando <a
-                        href={{objetoRecebido?.linkCanal}}>aqui.</a></label>
-            </div>
             }
         </div>
     </div>

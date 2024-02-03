@@ -4,7 +4,7 @@
         <iframe id="video" title="YouTube video player" frameborder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowfullscreen></iframe>
-        <div class="avaliacao">
+        <div class="titulo-video">
             <h2>{{tituloVideo}}</h2>
         </div>
     </div>
@@ -16,17 +16,20 @@
                 <span>{{porcentagem}}%</span>
             </div>
         </div>
+
         @for (item of objetoRecebido.tabelaVideos; track $index) {
-        <div class="item-lista" (click)="aoClicarNaAula(item)">
-            @if (item.concluido) {
-            <span class="material-symbols-outlined check-box"
-                (click)="aoClicarEmConcluido(item)">check_box</span>
-            }@else {
-            <span class="material-symbols-outlined check-box"
-                (click)="aoClicarEmConcluido(item)">check_box_outline_blank</span>
-            }
-            <p>{{item.titulo}}</p>
-        </div>
+            <div class="item-lista" (click)="aoClicarNaAula(item)">
+
+                @if (item.concluido) {
+                    <span class="material-symbols-outlined check-box" (click)="aoClicarEmConcluido(item)">check_box</span>
+                }
+                @else {
+                    <span class="material-symbols-outlined check-box" (click)="aoClicarEmConcluido(item)">check_box_outline_blank</span>
+                }
+
+                <p>{{item.titulo}}</p>
+            </div>
         }
+
     </div>
 </div>

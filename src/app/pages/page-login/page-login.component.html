@@ -9,11 +9,13 @@
         </div>
         <div class="container-senha">
             <label>Senha</label>
-            <input type="text" placeholder="Digite sua senha">
+            <input type="password" placeholder="Digite sua senha">
             @if (mostrarErroSenha) {
             <label id="erro-senha">Senha é obrigatória</label>
             }
-            <a href="#" id="esqueci-minha-senha">Esqueci minha senha</a>
+            <div id="esqueci-minha-senha">
+                <a href="#">Esqueci minha senha</a>
+            </div>
         </div>
         <div class="container-button">
             <button (click)="aoClicarEntrar()">Entrar</button>

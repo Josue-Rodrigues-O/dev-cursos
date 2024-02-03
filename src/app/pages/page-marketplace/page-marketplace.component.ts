@@ -16,11 +16,9 @@ import { Curso } from '../../interfaces/curso';
 export class PageMarketplaceComponent {
     constructor(private route: Router, private cursos: CursosService) { }
 
-    listaCursos = this.cursos.getLista();
-
-    titulo = ""
+    listaCursos: Array<Curso> = this.cursos.getLista();
 
     aoClicarNoCard(id: any) {
-        this.route.navigate([`detalhes-do-curso/${id}`])
+        this.route.navigate([`/detalhes-do-curso/${id}`])
     }
 }

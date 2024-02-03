@@ -16,6 +16,6 @@ export class PageLoginComponent {
   constructor(private route: Router) { }
 
   aoClicarEntrar() {
-    this.route.navigate(["area-do-consumidor"])
+    this.route.navigate(["/area-do-consumidor"])
   }
 }

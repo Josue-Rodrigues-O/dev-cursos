@@ -1,13 +1,10 @@
-import { Injectable, Input } from '@angular/core';
+import { Injectable } from '@angular/core';
 import { Curso } from '../interfaces/curso';
 
 @Injectable({
   providedIn: 'root'
 })
 export class CursosService {
-
-  constructor() { }
-
   public listaDeCursos: Array<Curso> = [
     {
       id: 0,

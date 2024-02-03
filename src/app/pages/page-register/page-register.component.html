@@ -3,23 +3,29 @@
         <div class="container-email">
             <label>Digite seu Email</label>
             <input type="text" placeholder="Email">
-            <!-- @if (mostrarErroEmail){
-            <label id="erro-email">Email é obrigatório</label>
-            } -->
+
+            @if (emailInvalido){
+                <label id="erro-email">Email é obrigatório</label>
+            }
+
         </div>
         <div class="container-senha">
             <label>Digite uma senha</label>
-            <input type="text" placeholder="Senha">
-            <!-- @if (mostrarErroSenha) {
-            <label id="erro-senha">Senha é obrigatória</label>
-            } -->
+            <input type="password" placeholder="Senha">
+
+            @if (senhaInvalida) {
+                <label id="erro-senha">Senha é obrigatória</label>
+            }
+
         </div>
         <div class="container-senha">
             <label>Digite sua senha novamente</label>
-            <input type="text" placeholder="Confirmar senha">
-            <!-- @if (mostrarErroSenha) {
-                <label id="erro-senha">Senha é obrigatória</label>
-            } -->
+            <input type="password" placeholder="Confirmar senha">
+
+            @if (segundaSenhaDiferenteDaPrimeira) {
+                <label id="erro-repetir-senha">Senha é obrigatória</label>
+            }
+
         </div>
         <div class="container-button">
             <button (click)="aoClicarEntrar()">Cadastrar</button>

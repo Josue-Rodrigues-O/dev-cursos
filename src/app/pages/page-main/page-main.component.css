@@ -8,7 +8,6 @@ app-barra-superior {
 
 header {
     padding: 10vh;
-    padding-top: 20vh;
     padding-bottom: 0;
 }
 
@@ -43,6 +42,12 @@ p {
     font-size: 4vh;
 }
 
+strong {
+    display: inline-block;
+    font-size: 10vh;
+    font-weight: bold;
+}
+
 .container {
     height: 90vh;
 }
@@ -65,33 +70,30 @@ p {
     border-radius: 2vh;
     display: flex;
     padding: 10vh;
-    transition: box-shadow 200ms ease;
+    transition: box-shadow 100ms ease;
 }
 
 .banner:hover {
-    box-shadow: 0 0 10px -5px black;
+    box-shadow: 0 0 1.8vh -0.5vh black;
     cursor: pointer;
     transform: scale(1.01, 1.01);
 }
 
-.texto,
-.icone {
+.banner-texto {
     height: 100%;
-}
-
-.texto {
     width: 60%;
     color: white;
 }
 
-.icone {
+.banner-icone {
+    height: 100%;
     width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.icon {
+.icone {
     border-radius: 50%;
     width: 60vh;
     height: 60vh;
@@ -102,7 +104,3 @@ p {
     justify-content: center;
 }
 
-#segundo-texto {
-    font-size: 10vh;
-    font-weight: bold;
-}

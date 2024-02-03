@@ -7,22 +7,12 @@ label {
     margin-bottom: 2vh;
 }
 
-a {
-    text-decoration: none;
-    font-weight: 500;
-    color: black;
-}
-
 button {
     width: 100%;
 }
 
 input:focus {
     box-shadow: 0px 0px 0.5rem #C1D9FF;
-}
-
-a:hover {
-    color: #0062CF;
 }
 
 .container {
@@ -51,10 +41,6 @@ a:hover {
     width: 70%;
 }
 
-.container-email {}
-
-.container-senha {}
-
 .container-button {
     align-items: center;
     justify-content: space-evenly;
@@ -62,15 +48,11 @@ a:hover {
 }
 
 #esqueci-minha-senha {
-    display: flex;
     justify-content: flex-end;
     margin-top: 1vh;
 }
 
-#erro-senha,
-#erro-email {}
-
-@media only screen and (max-width : 600px) {
+/* @media only screen and (max-width : 600px) {
     .container {
         height: 100vh;
         justify-content: center;
@@ -84,4 +66,4 @@ a:hover {
         align-items: center;
         justify-content: center;
     }
-}
+} */

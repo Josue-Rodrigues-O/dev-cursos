@@ -1,17 +1,18 @@
-section{
+section {
     display: flex;
 }
 
-p, strong{
+p,
+strong {
     font-size: 4vh;
     color: black;
 }
 
-.negrito{
+.negrito {
     font-weight: bold;
 }
 
-.titulo{
+.titulo {
     color: white;
     position: absolute;
     left: 15vh;
@@ -19,7 +20,7 @@ p, strong{
     font-size: 8.5vh;
 }
 
-.card-flutuante{
+.card-flutuante {
     border-radius: 1vh;
     background-color: hsl(212, 90%, 62%, 85%);
     color: white;
@@ -32,7 +33,7 @@ p, strong{
     font-size: 5vh;
 }
 
-.card-2{
+.card-2 {
     background-color: rgba(255, 255, 255, 0.781);
     border-radius: 1vh;
     color: black;
@@ -42,9 +43,9 @@ p, strong{
     font-size: 5vh;
 }
 
-.section-textos{
+.section-textos {
     width: 50%;
-    
+
     margin-right: 10vh;
     height: 80vh;
     display: flex;
@@ -52,13 +53,13 @@ p, strong{
     justify-content: center;
 }
 
-.section-textos h1{
+.section-textos h1 {
     color: #464B52;
     font-size: 8.5vh;
     margin-left: 15vh;
 }
 
-.imagem-1{
+.imagem-1 {
     background-image: url("https://img.freepik.com/fotos-gratis/perto-das-maos-do-homem-afro-americano-digitando-no-teclado-do-computador-na-sala-de-estar-usando-a-comunicacao-on-line-da-web-de-internet-do-escritorio-em-casa-trabalhador-remoto-trabalhando-em-casa_482257-30170.jpg?w=826&t=st=1705943742~exp=1705944342~hmac=7ebb9e476ef7e9335d2a3e0b0b4a3167566102a9e34f630ebf98b149bfc22543");
 }
 
@@ -67,19 +68,12 @@ p, strong{
 }
 
 .parallax {
-    /* The image used */
-    /* background-image: url("https://img.freepik.com/fotos-gratis/perto-das-maos-do-homem-afro-americano-digitando-no-teclado-do-computador-na-sala-de-estar-usando-a-comunicacao-on-line-da-web-de-internet-do-escritorio-em-casa-trabalhador-remoto-trabalhando-em-casa_482257-30170.jpg?w=826&t=st=1705943742~exp=1705944342~hmac=7ebb9e476ef7e9335d2a3e0b0b4a3167566102a9e34f630ebf98b149bfc22543");
-   */
-    /* Set a specific height */
     min-height: 100vh;
-  
-    /* Create the parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-
     display: flex;
     align-items: center;
     justify-content: center;
-  }
+}

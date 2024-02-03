@@ -25,9 +25,9 @@ progress{
 }
 
 .container {
-    height: 90vh;
+    height: 100vh;
     display: flex;
-    padding-top: 10vh;
+    flex-direction: column;
 }
 
 .container-video {
@@ -79,7 +79,7 @@ progress{
     color: #3D94FA;
 }
 
-.avaliacao {
+.titulo-video {
     margin-left: 10vh;
     margin-right: 10vh;
     display: flex;

@@ -13,7 +13,9 @@ export class PageLoginComponent {
   mostrarErroEmail = false
   mostrarErroSenha = false
 
-  constructor(private route: Router) { }
+  constructor(private route: Router) {
+    window.scrollTo(0, 0)
+  }
 
   aoClicarEntrar() {
     this.route.navigate(["/area-do-consumidor"])

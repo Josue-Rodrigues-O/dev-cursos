@@ -18,6 +18,7 @@ export class PageCourseComponent implements OnInit {
     porcentagem = "0"
 
     constructor(private activatedRoute: ActivatedRoute, private cursos: CursosService) {
+        window.scrollTo(0, 0)
         let id: any
         this.activatedRoute.paramMap.subscribe(params => {
             id = params.get('id');

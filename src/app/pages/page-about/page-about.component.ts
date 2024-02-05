@@ -10,5 +10,7 @@ import { FooterComponent } from "../../components/footer/footer.component";
     imports: [NavBarComponent, FooterComponent]
 })
 export class PageAboutComponent {
-
+    constructor() {
+        window.scrollTo(0, 0)
+    }
 }

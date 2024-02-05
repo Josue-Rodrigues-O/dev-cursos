@@ -19,6 +19,7 @@ export class PageAcquisitionComponent implements OnInit {
     objetoRecebido!: any
 
     constructor(private activatedRoute: ActivatedRoute, private cursos: CursosService) {
+        window.scrollTo(0, 0)
         let id: any
         this.activatedRoute.paramMap.subscribe(params => {
             id = params.get('id');

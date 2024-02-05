@@ -14,15 +14,17 @@ import { Curso } from '../../interfaces/curso';
     imports: [NavBarComponent, FooterComponent, CardCourseComponent]
 })
 export class PageMainComponent {
-    constructor(private route: Router, private cursos: CursosService){}
+    constructor(private route: Router, private cursos: CursosService) {
+        window.scrollTo(0, 0)
+    }
 
     listaMeusCursos: Array<Curso> = this.cursos.getMeusCursos()
 
-    aoClicarNoCard(id: any){
+    aoClicarNoCard(id: any) {
         this.route.navigate([`curso/${id}`])
     }
 
-    aoClicarNoBanner(){
+    aoClicarNoBanner() {
         this.route.navigate(["mercado"])
     }
 }

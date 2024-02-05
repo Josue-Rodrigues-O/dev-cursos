@@ -13,7 +13,9 @@ export class PageRegisterComponent {
   senhaInvalida: boolean = false
   segundaSenhaDiferenteDaPrimeira: boolean = false
 
-  constructor(private route: Router) { }
+  constructor(private route: Router) {
+    window.scrollTo(0, 0)
+  }
 
   aoClicarEntrar() {
     this.route.navigate(['/area-do-consumidor'])

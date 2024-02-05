@@ -14,7 +14,9 @@ import { Curso } from '../../interfaces/curso';
     imports: [NavBarComponent, CardCourseComponent, FooterComponent]
 })
 export class PageMarketplaceComponent {
-    constructor(private route: Router, private cursos: CursosService) { }
+    constructor(private route: Router, private cursos: CursosService) {
+        window.scrollTo(0, 0)
+    }
 
     listaCursos: Array<Curso> = this.cursos.getLista();
 
